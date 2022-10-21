@@ -1,8 +1,6 @@
 %-------------------------
 % Resume in Latex
 % Author : Samuel Rangira
-% Based off of: https://github.com/jake/resume
-% License : MIT
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -54,8 +52,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{5pt}]
+  \vspace{15pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-1pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -69,25 +67,25 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{2pt}\item
+  \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{7pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{7pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{7pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -112,7 +110,7 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge \scshape Samuel Rangira} \\ \vspace{1pt}
+    \textbf{\Huge \scshape Samuel Rangira} \\ \vspace{5pt}
     \small \address{Lincoln, NE 68508} $|$
     \small \href{mailto:x@x.com}{\underline{samuelrangira1@gmail.com}} $|$ 
     \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/samuelrangira/}} $|$
@@ -134,7 +132,7 @@
 
 %-----------EXPERIENCE-----------
 \section{Experience}
-  \resumeSubHeadingListStart
+    \resumeSubHeadingListStart
 
     \resumeSubheading
       {Software Engineer Intern}{August 2022 -- Present}
@@ -164,18 +162,20 @@
         \resumeItem{Designed and created the front end of a vendor receipts and tracking system for merchandizers to enter comments to send to third-party vendors }
     \resumeItemListEnd
 
-
+    \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------
 \section{Individual Projects}
     \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Portfolio Website} $|$ \emph{JavaScript, HTML, CSS, SASS, Figma}}{June 2022 -- October 2022}
-          \resumeItemListStart
-            \resumeItem{Developed a personal portfolio website to showcase my technical projects, write blogs, and share more about my skills and involvements}
-            
-          \resumeItemListEnd
+    
+    \resumeSubheading
+       {Portfolio Website}{June 2022 -- October 2022}
+       {}{}
+       \resumeItemListStart
+         \resumeItem{Developed a personal portfolio website to showcase my technical projects, write blogs, and share more about my skills and involvements. I used technologies such as JavaScript, HTML, CSS, SASS, and Figma }
+      \resumeItemListEnd
+          
       
     \resumeSubHeadingListEnd
 
@@ -189,7 +189,7 @@
      \textbf{Languages}{: Python, SQL (Postgres), JavaScript, HTML/CSS, Bootstrap, } \\
      \textbf{Frameworks}{: React, Angular, Node.js, Bootstrap, WordPress, Kendo-UI, Restful API} \\
      \textbf{Developer Tools}{: Git, Docker, VS Code, Visual Studio, PyCharm} \\
-     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib} \\
      \textbf{Operating systems}{: macOS, Windows, Linux}
     }}
  \end{itemize}
