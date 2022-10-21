@@ -2,4 +2,4 @@ My updated personal resume
 
 
 
-![My Resume](https://github.com/samuelrangira/Resume/blob/master/main.pdf)
+![Resume](https://github.com/samuelrangira/Resume/blob/master/main.pdf)
